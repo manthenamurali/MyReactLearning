@@ -1,5 +1,5 @@
 import "./AddUser.css";
-import Button from "./widgets/Button";
+import Button from "../widgets/Button";
 
 const AddUser = () => {
   return (

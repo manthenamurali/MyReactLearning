@@ -1,5 +1,5 @@
 import "./Register.css";
-import CardView from "./widgets/CardView";
+import CardView from "../widgets/CardView";
 import AddUser from "./AddUser";
 
 const Register = () => {
