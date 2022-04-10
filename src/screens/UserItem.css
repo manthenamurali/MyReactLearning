@@ -1,0 +1,10 @@
+.useritem {
+    width: 100%;
+    margin: 0.4rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    padding: 4px;
+    box-sizing: border-box;
+    font-size: small;
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
