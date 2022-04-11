@@ -13,8 +13,6 @@ const Register = () => {
     });
   };
 
-  console.log("refresh register screen....");
-
   return (
     <div>
       <CardView className="details-adduser">
@@ -22,7 +20,10 @@ const Register = () => {
       </CardView>
 
       <CardView className="details-adduser">
-        <UsersList users={registeredUsersList} />
+        {registeredUsersList.length === 0 && <h3>No Users Added.</h3>}
+        {registeredUsersList.length !== 0 && (
+          <UsersList users={registeredUsersList} />
+        )}
       </CardView>
     </div>
   );

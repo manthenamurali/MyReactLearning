@@ -1,0 +1,46 @@
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.alert {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 30%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.alert header {
+    background-color: #4C0C58;
+    padding: 1rem;
+}
+
+.alert p {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+}
+
+.alert h3 {
+    color: white;
+    margin: 0%;
+}
+
+.alert footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8%;
+    padding-bottom: 4%;
+}
+
+.alert Button {
+    width: 12%;
+}
