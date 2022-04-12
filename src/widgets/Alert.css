@@ -21,6 +21,10 @@
     padding: 1rem;
 }
 
+.alert header h3 {
+    text-align: center;
+}
+
 .alert p {
     color: black;
     font-weight: bold;

@@ -2,7 +2,8 @@ import "./Register.css";
 import CardView from "../widgets/CardView";
 import AddUser from "./AddUser";
 import UsersList from "./UsersList";
-import { useState } from "react";
+import React, { useState } from "react";
+import Wrapper from "../utils/Wrapper";
 
 const Register = () => {
   const [registeredUsersList, setUsersList] = useState([]);
@@ -13,8 +14,9 @@ const Register = () => {
     });
   };
 
+  // can also use React.Fragment instead of wrapper. fragment is react provided approach
   return (
-    <div>
+    <Wrapper>
       <CardView className="details-adduser">
         <AddUser userAddedCallback={userAddListner} />
       </CardView>
@@ -25,7 +27,7 @@ const Register = () => {
           <UsersList users={registeredUsersList} />
         )}
       </CardView>
-    </div>
+    </Wrapper>
   );
 };
 
